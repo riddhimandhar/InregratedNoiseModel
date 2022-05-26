@@ -1,0 +1,392 @@
+
+Model2 DM_YPD~PromNucOcc
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : NumPromNucOcc+AvPromNucOcc+N_PrNO50+N_PrNO300+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000
+Ridge_aic: N_PrNO500+N_PrNO50+V_PrNO400+N_PrNO300+V_PrNO1000+AvPromNucOcc+N_PrNO400
+Lasso    : AvPromNucOcc+NumGeneNucOcc+AvGeneNucOcc+N_PrNO50+N_PrNO100+N_PrNO300+N_PrNO400+N_PrNO500+N_PrNO700+N_PrNO800+N_PrNO900+N_PrNO1000+V_PrNO50+V_PrNO100+V_PrNO150+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO800+V_PrNO900+V_PrNO1000
+Lasso_aic: V_PrNO900+N_PrNO500+V_PrNO1000+AvPromNucOcc+N_PrNO400+V_PrNO150+NumGeneNucOcc+N_PrNO300+V_PrNO400+N_PrNO50
+
+Ridge regression: %VarExpl 5.46±0.55  Pred.Rsq 0.04±0.03 RMSE: 4.06±0.55 Cor: 0.22±0.05  Sig. Pval: 99.70 %
+Ridge aic       : %VarExpl 5.46±0.54  Pred.Rsq 0.04±0.03 RMSE: 4.06±0.55 Cor: 0.23±0.05  Sig. Pval: 99.70 %
+Lasso regression: %VarExpl 5.83±0.62  Pred.Rsq 0.04±0.03 RMSE: 4.07±0.55 Cor: 0.22±0.05  Sig. Pval: 99.60 %
+Lasso aic       : %VarExpl 5.73±0.56  Pred.Rsq 0.05±0.03 RMSE: 4.06±0.55 Cor: 0.23±0.05  Sig. Pval: 99.90 %
+RF_wiImp        : %VarExpl 3.44±1.02  PredVar 3.39±4.22
+RF_woImput      : %VarExpl 3.46±1.00  PredVar 3.37±4.24
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : AvPromNucOcc+N_PrNO50+N_PrNO300+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000
+Ridge_aic: V_PrNO400+N_PrNO50+N_PrNO500+V_PrNO1000+N_PrNO400+AvPromNucOcc+N_PrNO300
+Lasso    : AvPromNucOcc+N_PrNO50+N_PrNO300+N_PrNO400+N_PrNO500+V_PrNO50+V_PrNO100+V_PrNO150+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO800+V_PrNO1000
+Lasso_aic: N_PrNO500+V_PrNO400+N_PrNO50+V_PrNO500+N_PrNO400+AvPromNucOcc+V_PrNO1000+V_PrNO150+N_PrNO300
+
+Ridge regression: %VarExpl 5.46±0.54  Pred.Rsq 0.04±0.03 RMSE: 4.06±0.55 Cor: 0.23±0.05  Sig. Pval: 99.70 %
+Ridge aic       : %VarExpl 5.46±0.54  Pred.Rsq 0.04±0.03 RMSE: 4.06±0.55 Cor: 0.23±0.05  Sig. Pval: 99.70 %
+Lasso regression: %VarExpl 5.67±0.58  Pred.Rsq 0.04±0.03 RMSE: 4.06±0.55 Cor: 0.22±0.05  Sig. Pval: 99.70 %
+Lasso aic       : %VarExpl 5.64±0.58  Pred.Rsq 0.05±0.03 RMSE: 4.06±0.56 Cor: 0.23±0.05  Sig. Pval: 99.70 %
+RF_wiImp        : %VarExpl 4.40±1.05  PredVar 4.33±4.15
+RF_woImput      : %VarExpl 4.41±1.05  PredVar 4.31±4.18
+------------------------------------------------------------------------------------------------------
+---------------------------------------------------------
+
+Model3 DM_YPD~TATAbox+PromNucOcc
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+NumPromNucOcc+AvPromNucOcc+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000
+Ridge_aic: AvPromNucOcc+V_PrNO1000+N_PrNO400+TATAbox+N_PrNO500+V_PrNO400
+Lasso    : TATAbox+AvPromNucOcc+NumGeneNucOcc+N_PrNO50+N_PrNO100+N_PrNO300+N_PrNO400+N_PrNO500+N_PrNO700+N_PrNO1000+V_PrNO50+V_PrNO100+V_PrNO150+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO1000
+Lasso_aic: N_PrNO500+N_PrNO400+V_PrNO1000+AvPromNucOcc+V_PrNO150+N_PrNO300+V_PrNO400+TATAbox+N_PrNO50
+
+Ridge regression: %VarExpl 8.13±0.62  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.28±0.04  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 8.14±0.62  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.28±0.04  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 8.65±0.68  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.28±0.04  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 8.56±0.65  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.29±0.04  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 6.06±1.10  PredVar 5.93±4.55
+RF_woImput      : %VarExpl 6.06±1.10  PredVar 5.92±4.54
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+AvPromNucOcc+N_PrNO300+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000
+Ridge_aic: V_PrNO400+TATAbox+N_PrNO500+V_PrNO1000+N_PrNO400+AvPromNucOcc+N_PrNO300
+Lasso    : TATAbox+AvPromNucOcc+N_PrNO50+N_PrNO300+N_PrNO400+N_PrNO500+V_PrNO50+V_PrNO100+V_PrNO150+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO800+V_PrNO1000
+Lasso_aic: N_PrNO300+V_PrNO150+N_PrNO400+AvPromNucOcc+V_PrNO1000+TATAbox+N_PrNO50+V_PrNO400+N_PrNO500
+
+Ridge regression: %VarExpl 8.25±0.62  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.28±0.04  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 8.25±0.62  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.28±0.04  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 8.61±0.67  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.28±0.04  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 8.56±0.65  Pred.Rsq 0.07±0.03 RMSE: 4.00±0.54 Cor: 0.29±0.04  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 6.44±1.22  PredVar 6.23±4.74
+RF_woImput      : %VarExpl 6.45±1.22  PredVar 6.21±4.73
+------------------------------------------------------------------------------------------------------
+---------------------------------------------------------
+
+Model4 DM_YPD~Histone_Mods
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : NumGb_H3+Gb_H3+NumGb_H4+NumGb_H3K9ac_vsH3+NumGb_H3K14ac_vsH3+Gb_H3K14ac_vsH3+NumGb_H4ac_vsH3+NumGb_H3K4me1_vsH3+NumGb_H3K4me2_vsH3+Gb_H3K4me2_vsH3+NumGb_H3K4me3_vsH3+Gb_H3K4me3_vsH3+NumGb_H3K36me3_vsH3+Gb_H3K36me3_vsH3+NumGb_H3K79me3_vsH3+Gb_H3K79me3_vsH3+NumGb_ESA1+Gb_ESA1+NumGb_GCN5+NumGb_GCN4.AA+Gb_GCN4.AA+Prom_H3+Prom_H4+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3+Prom_GCN4.AA
+Ridge_aic: Prom_H4+Prom_H3K79me3_vsH3+Gb_ESA1+Gb_GCN4.AA+Gb_H3K79me3_vsH3+Gb_H3K14ac_vsH3+Prom_H4ac_vsH3
+Lasso    : Gb_H3K9ac_vsH3+Gb_H3K14ac_vsH3+Gb_H3K4me1_vsH3+Gb_H3K4me3_vsH3+Gb_H3K79me3_vsH3+Gb_ESA1+Gb_GCN5+Gb_GCN4.AA+Prom_H3+Prom_H4+Prom_H4ac_vsH3+Prom_H3K4me1_vsH3+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+Prom_GCN5+Prom_GCN4.AA
+Lasso_aic: Gb_GCN4.AA+Gb_H3K79me3_vsH3+Gb_H3K4me1_vsH3+Gb_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H4+Gb_ESA1+Prom_H3K79me3_vsH3
+
+Ridge regression: %VarExpl 15.10±0.86  Pred.Rsq 0.09±0.05 RMSE: 3.78±0.49 Cor: 0.33±0.05  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 15.28±0.89  Pred.Rsq 0.12±0.04 RMSE: 3.73±0.48 Cor: 0.36±0.05  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 15.46±0.90  Pred.Rsq 0.11±0.05 RMSE: 3.74±0.49 Cor: 0.35±0.05  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 15.41±0.89  Pred.Rsq 0.12±0.04 RMSE: 3.73±0.48 Cor: 0.36±0.05  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 13.83±2.68  PredVar 13.54±7.89
+RF_woImput      : %VarExpl 13.85±2.70  PredVar 13.60±7.81
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_ESA1+Gb_GCN4.AA+Prom_H4+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3+Prom_GCN4.AA
+Ridge_aic: Gb_GCN4.AA+Gb_H3K4me3_vsH3+Gb_H3K79me3_vsH3+Prom_H4ac_vsH3+Prom_H4+Prom_H3K79me3_vsH3+Gb_ESA1
+Lasso    : Gb_H3K4me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+Prom_GCN4.AA
+Lasso_aic: Prom_H3K79me3_vsH3+Prom_H4+Prom_H4ac_vsH3+Gb_H3K79me3_vsH3+Gb_H3K4me3_vsH3+Gb_GCN4.AA
+
+Ridge regression: %VarExpl 14.97±0.89  Pred.Rsq 0.11±0.04 RMSE: 3.75±0.49 Cor: 0.34±0.05  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 15.06±0.90  Pred.Rsq 0.11±0.04 RMSE: 3.73±0.48 Cor: 0.35±0.05  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 14.82±0.86  Pred.Rsq 0.12±0.04 RMSE: 3.73±0.48 Cor: 0.36±0.05  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 14.77±0.86  Pred.Rsq 0.12±0.04 RMSE: 3.72±0.47 Cor: 0.36±0.05  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 14.75±2.77  PredVar 14.39±8.07
+RF_woImput      : %VarExpl 14.72±2.75  PredVar 14.42±8.00
+------------------------------------------------------------------------------------------------------
+---------------------------------------------------------
+
+Model5 DM_YPD~TATAbox+PromNucOcc+Histone_Mods
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+NumPromNucOcc+AvPromNucOcc+N_PrNO50+N_PrNO300+N_PrNO400+N_PrNO500+V_PrNO50+V_PrNO150+V_PrNO200+V_PrNO300+V_PrNO400+V_PrNO500+V_PrNO600+V_PrNO700+V_PrNO1000+NumGb_H3+Gb_H3+NumGb_H4+NumGb_H3K9ac_vsH3+NumGb_H3K14ac_vsH3+Gb_H3K14ac_vsH3+NumGb_H4ac_vsH3+NumGb_H3K4me1_vsH3+NumGb_H3K4me2_vsH3+Gb_H3K4me2_vsH3+NumGb_H3K4me3_vsH3+Gb_H3K4me3_vsH3+NumGb_H3K36me3_vsH3+Gb_H3K36me3_vsH3+NumGb_H3K79me3_vsH3+Gb_H3K79me3_vsH3+NumGb_ESA1+Gb_ESA1+NumGb_GCN5+NumGb_GCN4.AA+Gb_GCN4.AA+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3+Prom_GCN4.AA
+Ridge_aic: Gb_H3+AvPromNucOcc+N_PrNO400+V_PrNO1000+V_PrNO150+V_PrNO400+Prom_H3K14ac_vsH3+Gb_H3K4me2_vsH3+Prom_H3K79me3_vsH3+N_PrNO500+TATAbox+NumPromNucOcc+N_PrNO50+Gb_GCN4.AA+Gb_H3K4me3_vsH3+Gb_H3K79me3_vsH3+Gb_ESA1
+Lasso    : TATAbox+AvPromNucOcc+AvGeneNucOcc+N_PrNO50+N_PrNO100+N_PrNO400+N_PrNO500+N_PrNO700+N_PrNO800+N_PrNO900+N_PrNO1000+V_PrNO100+V_PrNO150+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO700+V_PrNO1000+Gb_H3+Gb_H3K4me1_vsH3+Gb_H3K4me2_vsH3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_ESA1+Gb_GCN5+Gb_GCN4.AA+Prom_H4+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me2_vsH3+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3
+Lasso_aic: N_PrNO1000+Gb_H3K79me3_vsH3+TATAbox+N_PrNO50+Gb_GCN4.AA+Gb_H3K4me1_vsH3+Prom_H4+AvGeneNucOcc+Gb_ESA1+Prom_H3K14ac_vsH3+V_PrNO400+N_PrNO400+AvPromNucOcc+V_PrNO1000+Gb_H3+N_PrNO500+Prom_H3K79me3_vsH3
+
+Ridge regression: %VarExpl 15.50±0.96  Pred.Rsq 0.09±0.05 RMSE: 3.95±0.53 Cor: 0.33±0.05  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 15.83±0.98  Pred.Rsq 0.12±0.05 RMSE: 3.89±0.52 Cor: 0.36±0.05  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 16.49±0.99  Pred.Rsq 0.12±0.05 RMSE: 3.90±0.53 Cor: 0.36±0.05  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 16.57±0.97  Pred.Rsq 0.13±0.05 RMSE: 3.88±0.52 Cor: 0.37±0.05  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 15.16±2.24  PredVar 15.27±6.06
+RF_woImput      : %VarExpl 15.15±2.23  PredVar 15.29±6.09
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+AvPromNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000+Gb_H3+Gb_H3K4me2_vsH3+Gb_H3K4me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H3K79me3_vsH3
+Ridge_aic: N_PrNO500+Prom_H3K79me3_vsH3+Prom_H4+Gb_H3K4me2_vsH3+V_PrNO400+Gb_H3K79me3_vsH3+Gb_H3K4me3_vsH3+Gb_GCN4.AA+N_PrNO50+TATAbox+AvPromNucOcc+V_PrNO1000+N_PrNO400+Gb_H3
+Lasso    : TATAbox+NumPromNucOcc+AvPromNucOcc+N_PrNO50+N_PrNO300+N_PrNO400+N_PrNO500+V_PrNO100+V_PrNO150+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO700+V_PrNO1000+Gb_H3+Gb_H3K4me2_vsH3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_ESA1+Gb_GCN4.AA+Prom_H4+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3
+Lasso_aic: Gb_H3+V_PrNO150+N_PrNO400+V_PrNO1000+AvPromNucOcc+Prom_H3K14ac_vsH3+V_PrNO400+Gb_H3K4me2_vsH3+Prom_H3K79me3_vsH3+N_PrNO500+Gb_H3K4me3_vsH3+NumPromNucOcc+N_PrNO50+TATAbox+Gb_GCN4.AA+Gb_H3K79me3_vsH3+Gb_ESA1+Prom_H4
+
+Ridge regression: %VarExpl 15.30±0.96  Pred.Rsq 0.13±0.04 RMSE: 3.90±0.53 Cor: 0.37±0.05  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 15.30±0.96  Pred.Rsq 0.13±0.04 RMSE: 3.90±0.53 Cor: 0.37±0.05  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 15.83±1.03  Pred.Rsq 0.12±0.04 RMSE: 3.92±0.52 Cor: 0.36±0.05  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 16.01±1.04  Pred.Rsq 0.12±0.04 RMSE: 3.91±0.52 Cor: 0.37±0.05  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 15.38±2.30  PredVar 15.51±6.22
+RF_woImput      : %VarExpl 15.38±2.31  PredVar 15.46±6.24
+------------------------------------------------------------------------------------------------------
+---------------------------------------------------------
+
+Model6 DM_YPD~3D_interactions
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+Model7 DM_YPD~TF_binding
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : Num_RegTF_YeastractYT+PosCorTF_YT+NegCorTF_YT+PosCorTF.NegCorTF_YT+PercPosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+MeanStrNegCorTF+SdStrNegCorTF+SdCorPosCorTF+MeanCorNegCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PosCor.NegCor_withinTFs+PercPosCorWN_OVsites+N_TFSites100+N_TFSites200+N_TFSites300+N_TFSites400+N_TFSites500+N_TFSites600+N_TFSites700+N_TFSites800+N_TFSites900+N_TFSites1000+PercOfPromH4ac_vsH3+NumSites+NumOverlaps+RatOverlap.Numsites+AvgOverlapLen+AvgfrOverlapLen+OV400+OV600+OV1000+Avg_stract2_ov+Df_stract2_ov+Avg_corstr_act2_ov+Df_corstr_act2_ov+NumCoopTF_Yang2010+NumCoopTF_Chen2012+PercCoopTF_Yang2010+PercCoopTF_Chen2012+PercOvNocpTF_Yang2010+PercOvNocpTF_Chen2012
+Ridge_aic: NegCorTF_YT+PercNegCor_withinTFs+N_TFSites200+PercOvNocpTF_Yang2010+N_TFSites600+RatOverlap.Numsites+SdStrPosCorTF+MeanStrPosCorTF+NumOverlaps+PercOfPromH4ac_vsH3+OV400+MeanStrNegCorTF+PosCorTF_YT+PercPosCor_withinTFs+PosCorTF.NegCorTF_YT+Num_RegTF_YeastractYT
+Lasso    : Num_RegTF_YeastractYT+MedExp_TFYT+PosCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+MeanCorPosCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+PercOfPromNuc+TFsiteH3K79me3_vsH3+TFsiteESA1+TFsiteGCN5+PercOfPromH4ac_vsH3+NumSites+NumOverlaps+OV300+OV400+ConsensClustNum+ClosestTSS+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012
+Lasso_aic: N_TFSites600+PercOfPromNuc+MedExp_TFYT+TFsiteH3K79me3_vsH3+SdCorNegCorTF+MedPromShapeScore+PosCorTF_YT+OV300+PercPosCor_withinTFs+NumSites+Num_RegTF_YeastractYT+TFsiteESA1+MeanStrPosCorTF+NumOverlaps+PercOfPromH4ac_vsH3+OV400+MeanCorPosCorTF+MeanStrNegCorTF+ConsensClustNum+ClosestTSS
+
+Ridge regression: %VarExpl 23.91±2.03  Pred.Rsq 0.03±0.39 RMSE: 4.05±0.84 Cor: 0.38±0.14  Sig. Pval: 91.80 %
+Ridge aic       : %VarExpl 23.66±1.78  Pred.Rsq 0.21±0.07 RMSE: 3.72±0.55 Cor: 0.47±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 24.52±1.77  Pred.Rsq 0.22±0.07 RMSE: 3.69±0.55 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 24.57±1.75  Pred.Rsq 0.22±0.07 RMSE: 3.68±0.55 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 20.42±2.41  PredVar 20.42±7.83
+RF_woImput      : %VarExpl 25.39±2.24  PredVar 24.30±8.78
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+NumPosCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+N_TFSites400+NumSites+NumOverlaps+NumCoopTF_Chen2012+PercCoopTF_Yang2010
+Ridge_aic: Num_RegTF_YeastractYT+N_TFSites400+NumSites+PercPosCor_withinTFs+PosCorTF_YT+MeanStrNegCorTF+PercNegCor_withinTFs+PercCoopTF_Yang2010+NumOverlaps+MeanStrPosCorTF
+Lasso    : Num_RegTF_YeastractYT+PosCorTF_YT+NoiseNegCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+NumSites+NumOverlaps+ConsensClustNum+ClosestTSS+MedPromShapeScore+NumCoopTF_Chen2012
+Lasso_aic: PosCorTF_YT+Num_RegTF_YeastractYT+PercPosCor_withinTFs+NumOverlaps+MeanStrPosCorTF+NoiseNegCorTF_YT+ClosestTSS+MeanStrNegCorTF
+
+Ridge regression: %VarExpl 22.52±1.89  Pred.Rsq 0.21±0.07 RMSE: 3.72±0.58 Cor: 0.47±0.07  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 22.51±1.84  Pred.Rsq 0.21±0.07 RMSE: 3.72±0.57 Cor: 0.47±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 29.86±2.29  Pred.Rsq 0.21±0.13 RMSE: 3.41±0.43 Cor: 0.51±0.09  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 30.05±2.26  Pred.Rsq 0.23±0.12 RMSE: 3.38±0.43 Cor: 0.52±0.09  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 21.04±2.40  PredVar 21.15±7.81
+RF_woImput      : %VarExpl 1.90±7.04  PredVar -26.44±92.59
+------------------------------------------------------------------------------------------------------
+Filtered2 data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+NumPosCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+N_TFSites400+N_TFSites600+NumOverlaps+PercCoopTF_Yang2010
+Ridge_aic: Num_RegTF_YeastractYT+N_TFSites400+PercPosCor_withinTFs+PosCorTF_YT+N_TFSites600+PercNegCor_withinTFs+PercCoopTF_Yang2010+NumOverlaps+MeanStrPosCorTF
+Lasso    : Num_RegTF_YeastractYT+minDM_TFYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+NumPosCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+N_TFSites400+N_TFSites500+N_TFSites600+N_TFSites800+N_TFSites900+N_TFSites1000+NumSites+NumOverlaps+RatOverlap.Numsites+NumCoopTF_Chen2012+PercCoopTF_Yang2010
+Lasso_aic: RatOverlap.Numsites+PosCorTF_YT+N_TFSites600+Num_RegTF_YeastractYT+N_TFSites400+PercPosCor_withinTFs+PercNegCor_withinTFs+PercCoopTF_Yang2010+NumOverlaps+minDM_TFYT+MeanStrPosCorTF
+
+Ridge regression: %VarExpl 21.61±1.87  Pred.Rsq 0.20±0.07 RMSE: 3.76±0.55 Cor: 0.45±0.07  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 21.53±1.83  Pred.Rsq 0.20±0.07 RMSE: 3.75±0.55 Cor: 0.46±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 21.95±1.87  Pred.Rsq 0.19±0.07 RMSE: 3.77±0.55 Cor: 0.45±0.07  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 21.93±1.82  Pred.Rsq 0.20±0.07 RMSE: 3.74±0.55 Cor: 0.46±0.07  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 21.00±2.30  PredVar 21.31±7.70
+RF_woImput      : %VarExpl 20.99±2.31  PredVar 21.30±7.71
+------------------------------------------------------------------------------------------------------
+
+Model8 DM_YPD~TATAbox+PromNucOcc+Histone_Mods+TF_binding
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+NumPromNucOcc+AvPromNucOcc+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+NegCorTF_YT+PosCorTF.NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H4+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3
+Ridge_aic: V_PrNO1000+N_PrNO400+PosCorTF.NegCorTF_YT+Num_RegTF_YeastractYT+Gb_H3+V_PrNO400+PosCorTF_YT+PercPosCorWN_OVsites+Prom_H3K79me3_vsH3+MeanStrPosCorTF+N_PrNO500+Gb_H3K36me3_vsH3+NumNegCor_withinTFs+Gb_H3K79me3_vsH3+Gb_GCN4.AA+NumPromNucOcc+TATAbox+Gb_H3K4me3_vsH3+AvGeneNucOcc+PercNegCor_withinTFs
+Lasso    : TATAbox+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+N_PrNO900+N_PrNO1000+V_PrNO100+V_PrNO200+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+MedExp_TFYT+PosCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+MeanCorPosCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+N_TFSites900+AvgTFsiteAsoc+PercOfPromNuc+TFsiteGCN5+PercOfPromH4ac_vsH3+NumSites+NumOverlaps+AvgOverlapLen+OV300+OV400+OV500+ClosestTSS+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN5+Gb_GCN4.AA+Prom_H4+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3
+Lasso_aic: PercOfPromH4ac_vsH3+OV500+N_PrNO500+PercPosCor_withinTFs+NumSites+Num_RegTF_YeastractYT+PosCorTF_YT+V_PrNO400+OV300+Prom_H4+AvGeneNucOcc+V_PrNO100+SdCorNegCorTF+Gb_H3K36me3_vsH3+MedExp_TFYT+Gb_H3K4me3_vsH3+N_PrNO50+Gb_GCN4.AA+TATAbox+MeanStrNegCorTF+Prom_H3K79me3_vsH3+OV400+NumOverlaps+MeanStrPosCorTF+MeanCorPosCorTF+N_PrNO900+V_PrNO1000+Gb_H3+Gb_GCN5+MedPromShapeScore+AvgTFsiteAsoc+N_PrNO1000+Gb_H3K79me3_vsH3+PercOfPromNuc
+
+Ridge regression: %VarExpl 26.58±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.68±0.54 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.60±1.50  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.54 Cor: 0.49±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 29.62±1.53  Pred.Rsq 0.25±0.07 RMSE: 3.62±0.54 Cor: 0.51±0.06  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 29.68±1.50  Pred.Rsq 0.25±0.07 RMSE: 3.60±0.54 Cor: 0.52±0.06  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 22.35±3.28  PredVar 22.58±8.92
+RF_woImput      : %VarExpl 29.48±2.46  PredVar 29.26±8.17
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+PercNegCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: Prom_H3K79me3_vsH3+MeanStrNegCorTF+MeanStrPosCorTF+N_PrNO500+PercPosCor_withinTFs+V_PrNO1000+Gb_H3+Num_RegTF_YeastractYT+PosCorTF_YT+V_PrNO400+PercPosCorWN_OVsites+SdCorNegCorTF+PercNegCor_withinTFs+Gb_H3K36me3_vsH3+PercNegCorTF_YT+Gb_H3K79me3_vsH3+TATAbox+Gb_GCN4.AA
+Lasso    : TATAbox+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO100+V_PrNO200+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+N_TFSites900+ExpTF700+NumSites+NumOverlaps+AvgOverlapLen+OV400+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3
+Lasso_aic: Gb_H3K4me3_vsH3+Gb_GCN4.AA+TATAbox+N_TFSites600+Gb_H3K36me3_vsH3+SpreadTSS+V_PrNO200+V_PrNO100+SdCorNegCorTF+MedPromShapeScore+Prom_H4+ExpTF700+Num_RegTF_YeastractYT+PercPosCor_withinTFs+V_PrNO1000+N_PrNO500+OV400+MeanStrPosCorTF+MeanStrNegCorTF+Prom_H3K79me3_vsH3
+
+Ridge regression: %VarExpl 26.70±1.65  Pred.Rsq 0.23±0.07 RMSE: 3.66±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.65±1.62  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 37.05±1.93  Pred.Rsq 0.25±0.11 RMSE: 4.17±0.85 Cor: 0.53±0.08  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 37.19±1.69  Pred.Rsq 0.27±0.10 RMSE: 4.08±0.78 Cor: 0.56±0.06  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 23.00±3.33  PredVar 23.04±9.81
+RF_woImput      : %VarExpl 3.63±6.54  PredVar -24.02±101.44
+------------------------------------------------------------------------------------------------------
+Filtered2 data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+NumPosCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+N_TFSites400+NumOverlaps+RatOverlap.Numsites+PercCoopTF_Yang2010+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: TATAbox+RatOverlap.Numsites+Gb_GCN4.AA+Gb_H3K79me3_vsH3+PosCorTF_YT+N_TFSites400+Num_RegTF_YeastractYT+SdStrPosCorTF+PercPosCor_withinTFs+PercCoopTF_Yang2010+PercNegCor_withinTFs+NumOverlaps+Prom_H3K79me3_vsH3
+Lasso    : TATAbox+Num_RegTF_YeastractYT+minDM_TFYT+PosCorTF_YT+NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+N_TFSites400+N_TFSites500+N_TFSites600+N_TFSites800+N_TFSites900+N_TFSites1000+NumOverlaps+RatOverlap.Numsites+NumCoopTF_Chen2012+PercCoopTF_Yang2010+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Lasso_aic: SdStrPosCorTF+N_TFSites400+N_TFSites600+Gb_H3K79me3_vsH3+Gb_GCN4.AA+RatOverlap.Numsites+TATAbox+PercNegCor_withinTFs+PercPosCor_withinTFs+Num_RegTF_YeastractYT+PosCorTF_YT+Prom_H3K79me3_vsH3+NumOverlaps+minDM_TFYT+PercCoopTF_Yang2010
+
+Ridge regression: %VarExpl 24.89±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.69±0.53 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 24.78±1.46  Pred.Rsq 0.22±0.06 RMSE: 3.68±0.52 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 24.76±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.72±0.53 Cor: 0.47±0.06  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 24.82±1.47  Pred.Rsq 0.22±0.06 RMSE: 3.69±0.52 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 21.63±3.50  PredVar 22.05±10.88
+RF_woImput      : %VarExpl 21.63±3.48  PredVar 22.06±10.87
+------------------------------------------------------------------------------------------------------
+
+Model9 DM_YPD~TATAbox+PromNucOcc+Histone_Mods+TF_binding+mRNAprop
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+NumPromNucOcc+AvPromNucOcc+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+NegCorTF_YT+PosCorTF.NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H4+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3
+Ridge_aic: PercNegCor_withinTFs+AvGeneNucOcc+Gb_H3K79me3_vsH3+Gb_H3K4me3_vsH3+NumPromNucOcc+TATAbox+Gb_GCN4.AA+Gb_H3K36me3_vsH3+NumNegCor_withinTFs+MeanStrPosCorTF+N_PrNO500+Prom_H3K79me3_vsH3+PosCorTF_YT+V_PrNO400+PercPosCorWN_OVsites+N_PrNO400+V_PrNO1000+Gb_H3+Num_RegTF_YeastractYT+PosCorTF.NegCorTF_YT
+Lasso    : TATAbox+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+N_PrNO700+N_PrNO900+N_PrNO1000+V_PrNO100+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+MedExp_TFYT+PosCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+MeanCorPosCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+N_TFSites900+AvgTFsiteAsoc+PercOfPromNuc+PercOfPromH4ac_vsH3+NumSites+NumOverlaps+AvgOverlapLen+OV300+OV400+ClosestTSS+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_PARS25+mRNA_HL_Mins+Sun2012_mRNA_Synth_rate+Sun2012_mRNA_Decay_rate
+Lasso_aic: Prom_H3K79me3_vsH3+MeanStrNegCorTF+MeanStrPosCorTF+NumOverlaps+N_PrNO500+MeanCorPosCorTF+PercPosCor_withinTFs+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+V_PrNO400+Prom_H4+AvGeneNucOcc+V_PrNO100+MedPromShapeScore+SdCorNegCorTF+MedExp_TFYT+N_TFSites600+Gb_H3K79me3_vsH3+Prom_H3K4me3_vsH3+Gb_H3K4me3_vsH3+TATAbox+N_PrNO50
+
+Ridge regression: %VarExpl 26.58±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.68±0.54 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.60±1.50  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.54 Cor: 0.49±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 37.94±1.98  Pred.Rsq 0.31±0.09 RMSE: 3.08±0.29 Cor: 0.57±0.06  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 27.17±1.82  Pred.Rsq 0.26±0.07 RMSE: 3.60±0.55 Cor: 0.51±0.06  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 22.45±3.29  PredVar 22.69±9.01
+RF_woImput      : %VarExpl 28.37±3.20  PredVar 27.63±12.50
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+PercNegCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: V_PrNO1000+PercPosCor_withinTFs+Num_RegTF_YeastractYT+Gb_H3+V_PrNO400+PosCorTF_YT+PercPosCorWN_OVsites+Prom_H3K79me3_vsH3+MeanStrNegCorTF+MeanStrPosCorTF+N_PrNO500+Gb_H3K36me3_vsH3+PercNegCorTF_YT+Gb_H3K79me3_vsH3+Gb_GCN4.AA+TATAbox+SdCorNegCorTF+PercNegCor_withinTFs
+Lasso    : TATAbox+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO100+V_PrNO200+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+N_TFSites900+ExpTF700+NumSites+NumOverlaps+AvgOverlapLen+OV400+ClosestTSS+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_HL_Mins+Sun2012_mRNA_Decay_rate
+Lasso_aic: Gb_H3+ExpTF700+MeanStrNegCorTF+Prom_H3K79me3_vsH3+OV400+MeanStrPosCorTF+N_PrNO500+SpreadTSS+N_TFSites400+Gb_H3K79me3_vsH3+N_TFSites600+Gb_H3K4me3_vsH3+N_PrNO50+TATAbox+NumCoopTF_Chen2012+V_PrNO200+V_PrNO100+MedPromShapeScore+SdCorNegCorTF
+
+Ridge regression: %VarExpl 26.70±1.65  Pred.Rsq 0.23±0.07 RMSE: 3.66±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.65±1.62  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 43.13±2.45  Pred.Rsq 0.28±0.20 RMSE: 3.47±0.50 Cor: 0.59±0.08  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 32.33±3.21  Pred.Rsq 0.28±0.11 RMSE: 4.10±0.93 Cor: 0.54±0.09  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 23.27±3.38  PredVar 23.38±9.90
+RF_woImput      : %VarExpl 6.93±7.31  PredVar -62.69±245.50
+------------------------------------------------------------------------------------------------------
+Filtered2 data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+NumPosCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+N_TFSites400+NumOverlaps+RatOverlap.Numsites+PercCoopTF_Yang2010+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: NumOverlaps+PercNegCor_withinTFs+PercCoopTF_Yang2010+Prom_H3K79me3_vsH3+PosCorTF_YT+Gb_H3K79me3_vsH3+RatOverlap.Numsites+Gb_GCN4.AA+TATAbox+PercPosCor_withinTFs+SdStrPosCorTF+Num_RegTF_YeastractYT+N_TFSites400
+Lasso    : TATAbox+Num_RegTF_YeastractYT+minDM_TFYT+PosCorTF_YT+NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+PercPosCor_withinTFs+PercNegCor_withinTFs+N_TFSites400+N_TFSites500+N_TFSites600+N_TFSites900+N_TFSites1000+NumOverlaps+RatOverlap.Numsites+NumCoopTF_Chen2012+PercCoopTF_Yang2010+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3+mRNA_HL_Mins
+Lasso_aic: minDM_TFYT+NumOverlaps+Prom_H3K79me3_vsH3+PosCorTF_YT+Gb_H3K79me3_vsH3+N_TFSites600+RatOverlap.Numsites+TATAbox+Gb_GCN4.AA+PercPosCor_withinTFs+SdStrPosCorTF+N_TFSites900+N_TFSites400+Num_RegTF_YeastractYT
+
+Ridge regression: %VarExpl 24.89±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.69±0.53 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 24.78±1.46  Pred.Rsq 0.22±0.06 RMSE: 3.68±0.52 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 27.66±1.93  Pred.Rsq 0.22±0.08 RMSE: 3.74±0.66 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 24.50±1.42  Pred.Rsq 0.22±0.06 RMSE: 3.69±0.52 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 22.14±3.51  PredVar 22.60±10.67
+RF_woImput      : %VarExpl 22.73±4.22  PredVar 23.11±12.92
+------------------------------------------------------------------------------------------------------
+
+Model10 DM_YPD~SAGA_TFIIDprops
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+Model11 DM_YPD~TBPprop_NSMB2009
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+Model12 DM_YPD~Nuc_Assoc_prot
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+Model13 DM_YPD~Hist_dynamics
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+Model14 DM_YPD~Model10-13
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+Model15 DM_YPD~Model9+Model10-13
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+NumPromNucOcc+AvPromNucOcc+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+NegCorTF_YT+PosCorTF.NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H4+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3
+Ridge_aic: NumNegCor_withinTFs+Gb_H3K36me3_vsH3+Gb_H3K4me3_vsH3+Gb_GCN4.AA+NumPromNucOcc+TATAbox+Gb_H3K79me3_vsH3+AvGeneNucOcc+PercNegCor_withinTFs+Num_RegTF_YeastractYT+Gb_H3+PosCorTF.NegCorTF_YT+V_PrNO1000+N_PrNO400+PercPosCorWN_OVsites+PosCorTF_YT+V_PrNO400+Prom_H3K79me3_vsH3+N_PrNO500+MeanStrPosCorTF
+Lasso    : TATAbox+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+N_PrNO700+N_PrNO900+N_PrNO1000+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+MedExp_TFYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+MeanStrNegCorTF+MeanCorPosCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites900+AvgTFsiteAsoc+PercOfPromNuc+PercOfPromH4ac_vsH3+NumSites+NumOverlaps+AvgOverlapLen+OV300+OV400+ClosestTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_HL_Mins+Sun2012_mRNA_Synth_rate+Sun2012_mRNA_Decay_rate+Pugh2004_SAGA_Dominance+YenEtAl_Cell2012_Ino80_Nuc+YenEtAl_Cell2012_Isw1_Nuc+YenEtAl_Cell2012_Isw1_terminalNuc
+Lasso_aic: SdStrPosCorTF+N_TFSites400+MedExp_TFYT+N_PrNO1000+Prom_H3K4me3_vsH3+Gb_H3K79me3_vsH3+PercOfPromNuc+TATAbox+N_PrNO50+NumCoopTF_Chen2012+MedPromShapeScore+SdCorNegCorTF+Pugh2004_SAGA_Dominance+YenEtAl_Cell2012_Isw1_Nuc+Gb_H3+OV300+Prom_H3K79me3_vsH3+MeanStrNegCorTF+YenEtAl_Cell2012_Ino80_Nuc+MeanStrPosCorTF+NumOverlaps+N_PrNO500+MeanCorPosCorTF
+
+Ridge regression: %VarExpl 26.58±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.68±0.54 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.60±1.50  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.54 Cor: 0.49±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 39.63±2.16  Pred.Rsq 0.33±0.09 RMSE: 3.01±0.33 Cor: 0.59±0.06  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 27.24±2.16  Pred.Rsq 0.26±0.08 RMSE: 3.69±0.65 Cor: 0.52±0.07  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 22.83±3.33  PredVar 23.11±9.04
+RF_woImput      : %VarExpl 30.19±3.39  PredVar 29.15±13.33
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+PercNegCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: PercPosCorWN_OVsites+V_PrNO400+PosCorTF_YT+Gb_H3+Num_RegTF_YeastractYT+V_PrNO1000+PercPosCor_withinTFs+N_PrNO500+MeanStrPosCorTF+MeanStrNegCorTF+Prom_H3K79me3_vsH3+TATAbox+Gb_GCN4.AA+PercNegCorTF_YT+Gb_H3K79me3_vsH3+Gb_H3K36me3_vsH3+PercNegCor_withinTFs+SdCorNegCorTF
+Lasso    : TATAbox+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO200+V_PrNO300+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+NoiseNegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites900+NoiseTF600+ExpTF700+NumSites+NumOverlaps+AvgOverlapLen+OV400+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_HL_Mins+Sun2012_mRNA_Decay_rate+Pugh2004_SAGA_Dominance+YenEtAl_Cell2012_Ino80_Nuc+YenEtAl_Cell2012_Isw1_Nuc+YenEtAl_Cell2012_Isw1_terminalNuc
+Lasso_aic: V_PrNO200+MedPromShapeScore+NoiseNegCorTF_YT+Prom_H4+NumCoopTF_Chen2012+Prom_H3K4me3_vsH3+TATAbox+Gb_GCN4.AA+N_PrNO50+SdStrPosCorTF+Gb_H3K36me3_vsH3+NumOverlaps+MeanStrPosCorTF+NoiseTF600+V_PrNO400+ExpTF700+Pugh2004_SAGA_Dominance+Gb_H3+Num_RegTF_YeastractYT+YenEtAl_Cell2012_Isw1_terminalNuc
+
+Ridge regression: %VarExpl 26.70±1.65  Pred.Rsq 0.23±0.07 RMSE: 3.66±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.65±1.62  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl NaN±NaN  Pred.Rsq -485683.74±10712401.70 RMSE: 345.11±2169.46 Cor: 0.05±0.53  Sig. Pval: 25.70 %
+Lasso aic       : %VarExpl 55.43±9.83  Pred.Rsq -4.77±12.13 RMSE: 7.11±4.84 Cor: 0.26±0.32  Sig. Pval: 24.40 %
+RF_wiImp        : %VarExpl 23.68±3.47  PredVar 23.77±9.97
+RF_woImput      : %VarExpl -11.04±2.23  PredVar -1.36±2.74
+------------------------------------------------------------------------------------------------------
+Filtered2 data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+NumPosCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: TATAbox+Gb_GCN4.AA+PercPosCorWN_OVsites+PosCorTF_YT+Gb_H3K79me3_vsH3+Num_RegTF_YeastractYT+SdStrPosCorTF+PercPosCor_withinTFs+PercNegCor_withinTFs+MeanStrPosCorTF+Prom_H3K79me3_vsH3
+Lasso    : TATAbox+Num_RegTF_YeastractYT+minDM_TFYT+PosCorTF_YT+NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+PercPosCor_withinTFs+PercNegCor_withinTFs+N_TFSites400+N_TFSites500+N_TFSites600+N_TFSites900+N_TFSites1000+NumOverlaps+RatOverlap.Numsites+NumCoopTF_Chen2012+PercCoopTF_Yang2010+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3+mRNA_HL_Mins+Pugh2004_SAGA_Dominance
+Lasso_aic: PosCorTF_YT+Gb_H3K79me3_vsH3+TATAbox+RatOverlap.Numsites+Gb_GCN4.AA+PercPosCor_withinTFs+Pugh2004_SAGA_Dominance+SdStrPosCorTF+N_TFSites400+Num_RegTF_YeastractYT+minDM_TFYT+NumOverlaps+Prom_H3K79me3_vsH3
+
+Ridge regression: %VarExpl 23.64±1.49  Pred.Rsq 0.20±0.07 RMSE: 3.71±0.53 Cor: 0.46±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 23.63±1.48  Pred.Rsq 0.20±0.07 RMSE: 3.71±0.53 Cor: 0.46±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 28.69±2.11  Pred.Rsq 0.23±0.09 RMSE: 3.78±0.71 Cor: 0.49±0.08  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 26.28±1.68  Pred.Rsq 0.23±0.08 RMSE: 3.75±0.60 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 22.69±3.48  PredVar 23.01±9.78
+RF_woImput      : %VarExpl 23.50±4.42  PredVar 19.48±11.52
+------------------------------------------------------------------------------------------------------
+
+Model16 DM_YPD~TATAbox+PromNucOcc+Histone_Mods+TF_binding+mRNAprop+PTM
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+NumPromNucOcc+AvPromNucOcc+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+NegCorTF_YT+PosCorTF.NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H4+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3
+Ridge_aic: Prom_H3K79me3_vsH3+N_PrNO500+MeanStrPosCorTF+Num_RegTF_YeastractYT+Gb_H3+PosCorTF.NegCorTF_YT+V_PrNO1000+N_PrNO400+PercPosCorWN_OVsites+PosCorTF_YT+V_PrNO400+AvGeneNucOcc+PercNegCor_withinTFs+NumNegCor_withinTFs+Gb_H3K36me3_vsH3+Gb_H3K4me3_vsH3+TATAbox+NumPromNucOcc+Gb_GCN4.AA+Gb_H3K79me3_vsH3
+Lasso    : TATAbox+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+N_PrNO700+N_PrNO900+N_PrNO1000+V_PrNO100+V_PrNO200+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+MedExp_TFYT+PosCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+MeanCorPosCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+N_TFSites900+AvgTFsiteAsoc+PercOfPromNuc+PercOfPromH4ac_vsH3+NumSites+NumOverlaps+AvgOverlapLen+OV300+OV400+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN5+Gb_GCN4.AA+Prom_H4+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_PARS25+mRNA_PARS50+mRNA_HL_Mins+Sun2012_mRNA_Synth_rate+Sun2012_mRNA_Decay_rate+Acetylation+Ubiquitination
+Lasso_aic: V_PrNO400+Gb_H3+Num_RegTF_YeastractYT+Acetylation+PercPosCor_withinTFs+V_PrNO1000+N_PrNO500+MeanCorPosCorTF+MeanStrPosCorTF+NumOverlaps+Prom_H3K79me3_vsH3+MeanStrNegCorTF+Gb_H3K4me3_vsH3+TATAbox+N_PrNO50+Gb_H3K79me3_vsH3+N_TFSites600+MedExp_TFYT+Prom_H4ac_vsH3+Gb_GCN5+MedPromShapeScore+SdCorNegCorTF+NumCoopTF_Chen2012+AvGeneNucOcc+Prom_H4
+
+Ridge regression: %VarExpl 26.58±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.68±0.54 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.60±1.50  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.54 Cor: 0.49±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 41.43±2.04  Pred.Rsq 0.34±0.09 RMSE: 3.07±0.30 Cor: 0.60±0.06  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 31.11±1.50  Pred.Rsq 0.29±0.06 RMSE: 3.35±0.40 Cor: 0.55±0.05  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 22.55±3.31  PredVar 22.81±8.88
+RF_woImput      : %VarExpl 30.46±3.14  PredVar 29.77±12.17
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+PercNegCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: SdCorNegCorTF+PercNegCor_withinTFs+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+PercNegCorTF_YT+TATAbox+Gb_GCN4.AA+MeanStrNegCorTF+Prom_H3K79me3_vsH3+MeanStrPosCorTF+N_PrNO500+PercPosCor_withinTFs+V_PrNO1000+Gb_H3+Num_RegTF_YeastractYT+PosCorTF_YT+V_PrNO400+PercPosCorWN_OVsites
+Lasso    : TATAbox+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO100+V_PrNO200+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+NoiseTF600+NumSites+NumOverlaps+AvgOverlapLen+OV400+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H4+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_HL_Mins+Sun2012_mRNA_Decay_rate+Acetylation
+Lasso_aic: SdStrPosCorTF+Gb_H3K36me3_vsH3+SpreadTSS+Prom_H3K4me3_vsH3+Gb_H3K79me3_vsH3+TATAbox+Gb_GCN4.AA+V_PrNO200+SdCorNegCorTF+Acetylation+Gb_H3+Num_RegTF_YeastractYT+MeanStrNegCorTF+NoiseTF600+NumOverlaps+MeanStrPosCorTF
+
+Ridge regression: %VarExpl 26.70±1.65  Pred.Rsq 0.23±0.07 RMSE: 3.66±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.65±1.62  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 48.99±4.50  Pred.Rsq 0.11±0.34 RMSE: 3.65±0.59 Cor: 0.53±0.13  Sig. Pval: 96.50 %
+Lasso aic       : %VarExpl 30.41±3.18  Pred.Rsq 0.14±0.24 RMSE: 4.06±0.96 Cor: 0.49±0.11  Sig. Pval: 99.20 %
+RF_wiImp        : %VarExpl 23.49±3.36  PredVar 23.61±9.77
+RF_woImput      : %VarExpl 5.41±7.11  PredVar -68.81±253.49
+------------------------------------------------------------------------------------------------------
+---------------------------------------------------------
+
+Model17 DM_YPD~Model9+Model10-13+PTM
+Unfiltered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+NumPromNucOcc+AvPromNucOcc+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+V_PrNO200+V_PrNO400+V_PrNO500+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+NegCorTF_YT+PosCorTF.NegCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H4+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K14ac_vsH3+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K36me3_vsH3+Prom_H3K79me3_vsH3
+Ridge_aic: PercNegCor_withinTFs+AvGeneNucOcc+Gb_H3K79me3_vsH3+Gb_H3K4me3_vsH3+TATAbox+NumPromNucOcc+Gb_GCN4.AA+Gb_H3K36me3_vsH3+NumNegCor_withinTFs+MeanStrPosCorTF+N_PrNO500+Prom_H3K79me3_vsH3+PosCorTF_YT+V_PrNO400+PercPosCorWN_OVsites+N_PrNO400+V_PrNO1000+Gb_H3+Num_RegTF_YeastractYT+PosCorTF.NegCorTF_YT
+Lasso    : TATAbox+AvGeneNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+N_PrNO700+N_PrNO900+N_PrNO1000+V_PrNO200+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+MedExp_TFYT+PosCorTF_YT+NoisePosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+MeanStrNegCorTF+MeanCorPosCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites900+AvgTFsiteAsoc+PercOfPromNuc+PercOfPromH4ac_vsH3+NumSites+NumOverlaps+OV300+OV400+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN5+Gb_GCN4.AA+Prom_H4+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_HL_Mins+Sun2012_mRNA_Synth_rate+Sun2012_mRNA_Decay_rate+Pugh2004_SAGA_Dominance+YenEtAl_Cell2012_Isw1_Nuc+YenEtAl_Cell2012_Isw1_terminalNuc+Acetylation+Ubiquitination
+Lasso_aic: Pugh2004_SAGA_Dominance+Acetylation+YenEtAl_Cell2012_Isw1_Nuc+Num_RegTF_YeastractYT+Gb_H3+YenEtAl_Cell2012_Isw1_terminalNuc+NoisePosCorTF_YT+V_PrNO400+MeanStrNegCorTF+NumOverlaps+MeanStrPosCorTF+SdStrPosCorTF+N_PrNO1000+Gb_H3K79me3_vsH3+Prom_H3K4me3_vsH3+Prom_H4+Gb_GCN5+SdCorNegCorTF+MedPromShapeScore
+
+Ridge regression: %VarExpl 26.58±1.53  Pred.Rsq 0.21±0.07 RMSE: 3.68±0.54 Cor: 0.48±0.06  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.60±1.50  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.54 Cor: 0.49±0.06  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 46.78±2.35  Pred.Rsq 0.36±0.11 RMSE: 3.24±0.35 Cor: 0.62±0.07  Sig. Pval: 100.00 %
+Lasso aic       : %VarExpl 33.18±2.18  Pred.Rsq 0.30±0.09 RMSE: 3.72±0.59 Cor: 0.56±0.07  Sig. Pval: 100.00 %
+RF_wiImp        : %VarExpl 22.91±3.34  PredVar 23.17±8.91
+RF_woImput      : %VarExpl 31.35±3.44  PredVar 18.46±7.05
+------------------------------------------------------------------------------------------------------
+Filtered data 1000 iterations
+------------------------------------------------------------------------------------------------------
+Ridge    : TATAbox+N_PrNO400+N_PrNO500+V_PrNO400+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+PercNegCorTF_YT+MeanStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+NumPosCor_withinTFs+NumNegCor_withinTFs+PercPosCor_withinTFs+PercNegCor_withinTFs+PercPosCorWN_OVsites+Gb_H3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_GCN4.AA+Prom_H3K79me3_vsH3
+Ridge_aic: N_PrNO500+MeanStrPosCorTF+Prom_H3K79me3_vsH3+MeanStrNegCorTF+PercPosCorWN_OVsites+PosCorTF_YT+V_PrNO400+Gb_H3+Num_RegTF_YeastractYT+PercPosCor_withinTFs+V_PrNO1000+PercNegCor_withinTFs+SdCorNegCorTF+TATAbox+Gb_GCN4.AA+Gb_H3K79me3_vsH3+PercNegCorTF_YT+Gb_H3K36me3_vsH3
+Lasso    : TATAbox+NumPromNucOcc+N_PrNO50+N_PrNO400+N_PrNO500+N_PrNO600+V_PrNO100+V_PrNO200+V_PrNO300+V_PrNO400+V_PrNO600+V_PrNO1000+Num_RegTF_YeastractYT+PosCorTF_YT+MeanStrPosCorTF+SdStrPosCorTF+MeanStrNegCorTF+SdCorNegCorTF+PercPosCor_withinTFs+N_TFSites400+N_TFSites600+N_TFSites900+ExpTF700+NumSites+NumOverlaps+RatOverlap.Numsites+AvgOverlapLen+OV400+Avg_corstr_act2_ov+ClosestTSS+SpreadTSS+MedPromShapeScore+NumCoopTF_Chen2012+PercCoopTF_Yang2010+Gb_H3+Gb_H3K4me3_vsH3+Gb_H3K36me3_vsH3+Gb_H3K79me3_vsH3+Gb_ESA1+Gb_GCN4.AA+Prom_H4+Prom_H4ac_vsH3+Prom_H3K4me3_vsH3+Prom_H3K79me3_vsH3+mRNA_HL_Mins+Sun2012_mRNA_Decay_rate+Pugh2004_SAGA_Dominance+YenEtAl_Cell2012_Ino80_Nuc+YenEtAl_Cell2012_Isw1_Nuc+YenEtAl_Cell2012_Isw1_terminalNuc+DionScience2007_Gene_H3Occ+Acetylation+Succinylation
+Lasso_aic: Succinylation+N_PrNO500+Acetylation+Pugh2004_SAGA_Dominance+DionScience2007_Gene_H3Occ+Num_RegTF_YeastractYT+N_TFSites900+Gb_H3K79me3_vsH3+ExpTF700
+
+Ridge regression: %VarExpl 26.70±1.65  Pred.Rsq 0.23±0.07 RMSE: 3.66±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Ridge aic       : %VarExpl 26.65±1.62  Pred.Rsq 0.23±0.07 RMSE: 3.65±0.55 Cor: 0.49±0.07  Sig. Pval: 100.00 %
+Lasso regression: %VarExpl 45.37±9.10  Pred.Rsq -2.99±23.92 RMSE: 6.13±4.29 Cor: 0.26±0.23  Sig. Pval: 31.00 %
+Lasso aic       : %VarExpl 27.38±3.12  Pred.Rsq 0.14±0.24 RMSE: 3.49±0.64 Cor: 0.48±0.13  Sig. Pval: 91.10 %
+RF_wiImp        : %VarExpl 23.93±3.42  PredVar 24.05±9.83
+RF_woImput      : %VarExpl -11.04±2.23  PredVar -1.36±2.74
+------------------------------------------------------------------------------------------------------
+---------------------------------------------------------
