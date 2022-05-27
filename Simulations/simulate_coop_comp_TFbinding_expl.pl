@@ -260,17 +260,17 @@ for($i=0;$i<$no;$i++)
 {
   $time1+=$arr1[$i];
   $time1=sprintf("%0.4f",$time1);
-  $ttlist1{$time1}=$rate[1];
+  $ttlist1{$time1}=1;
   $time1+=$arr2[$i];
   $time1=sprintf("%0.4f",$time1);
-  $ttlist1{$time1}=$bas;
+  $ttlist1{$time1}=0;
 
   $time2+=$arr3[$i];
   $time2=sprintf("%0.4f",$time2);
-  $ttlist2{$time2}=$rate[2];
+  $ttlist2{$time2}=1;
   $time2+=$arr4[$i];
   $time2=sprintf("%0.4f",$time2);
-  $ttlist2{$time2}=$bas;
+  $ttlist2{$time2}=0;
 }
 
 if($time1>$time2) { $time=$time1; } 
@@ -294,10 +294,26 @@ for($i=0;$i<$tottime;$i+=$uot)
   $i=sprintf("%0.4f",$i);
   if(exists $ttlist1{$i} && exists $ttlist2{$i})
   {
-    $rt=($ttlist1{$i}+$ttlist2{$i})*0.77;
+      if($ttlist1{$i}==1 && $ttlist2{$i}==1) 
+      {
+	 $rt=($rate[1]+$rate[2])*0.80; 
+      }
+      elsif($ttlist1{$i}==1 && $ttlist2{$i}==0) 
+      {
+	 $rt=$rate[1]*0.80; 
+      }
+      elsif($ttlist1{$i}==0 && $ttlist2{$i}==1) 
+      {
+	 $rt=$rate[2]*0.80; 
+      }
+      elsif($ttlist1{$i}==0 && $ttlist2{$i}==0) 
+      {
+	 $rt=$bas; 
+      }
+
     print TM "$i\t$rt\n"; 
   
-    if($prev>2*$bas)
+    if($prev>$bas)
     {
       $prot+=($protrate*$mrna-$degp*$prot);
       $mrna+=($prev-$degm*$mrna); 
@@ -317,10 +333,12 @@ for($i=0;$i<$tottime;$i+=$uot)
   }
   elsif(exists $ttlist1{$i})
   {
-    $rt=$ttlist1{$i}*0.77;
+    if($ttlist1{$i}==1) { $rt=$rate[1]*0.80; } 
+    else { $rt=$bas; } 
+
     print TM "$i\t$rt\n"; 
   
-    if($prev>2*$bas)
+    if($prev>$bas)
     {
       $prot+=($protrate*$mrna-$degp*$prot);
       $mrna+=($prev-$degm*$mrna); 
@@ -340,10 +358,12 @@ for($i=0;$i<$tottime;$i+=$uot)
   }
   elsif(exists $ttlist2{$i})
   {
-    $rt=$ttlist2{$i}*0.77;
+    if($ttlist2{$i}==1) { $rt=$rate[2]*0.80; } 
+    else { $rt=$bas; } 
+
     print TM "$i\t$rt\n"; 
   
-    if($prev>2*$bas)
+    if($prev>$bas)
     {
       $prot+=($protrate*$mrna-$degp*$prot);
       $mrna+=($prev-$degm*$mrna); 
@@ -1071,17 +1091,17 @@ for($cn=0;$cn<10;$cn++)
   {
     $time1+=$arr1[$i];
     $time1=sprintf("%0.4f",$time1);
-    $ttlist1{$time1}=$rate[1];
+    $ttlist1{$time1}=1;
     $time1+=$arr2[$i];
     $time1=sprintf("%0.4f",$time1);
-    $ttlist1{$time1}=$bas;
+    $ttlist1{$time1}=0;
 
     $time2+=$arr3[$i];
     $time2=sprintf("%0.4f",$time2);
-    $ttlist2{$time2}=$rate[2];
+    $ttlist2{$time2}=1;
     $time2+=$arr4[$i];
     $time2=sprintf("%0.4f",$time2);
-    $ttlist2{$time2}=$bas;
+    $ttlist2{$time2}=0;
   }
 
   if($time1>$time2) { $time=$time1; } 
@@ -1098,10 +1118,26 @@ for($cn=0;$cn<10;$cn++)
     $timelist[$cl]=$i;
     if(exists $ttlist1{$i} && exists $ttlist2{$i})
     {
-      $rt=($ttlist1{$i}+$ttlist2{$i})*0.77; 
+      if($ttlist1{$i}==1 && $ttlist2{$i}==1) 
+      {
+	 $rt=($rate[1]+$rate[2])*0.80; 
+      }
+      elsif($ttlist1{$i}==1 && $ttlist2{$i}==0) 
+      {
+	 $rt=$rate[1]*0.80; 
+      }
+      elsif($ttlist1{$i}==0 && $ttlist2{$i}==1) 
+      {
+	 $rt=$rate[2]*0.80; 
+      }
+      elsif($ttlist1{$i}==0 && $ttlist2{$i}==0) 
+      {
+	 $rt=$bas; 
+      }
+
       $trlist[$cn][$cl]=$rt; 
 
-      if($prev>2*$bas)
+      if($prev>$bas)
       {
         $prot+=($protrate*$mrna-$degp*$prot);
         $mrna+=($prev-$degm*$mrna); 
@@ -1121,10 +1157,11 @@ for($cn=0;$cn<10;$cn++)
     }
     elsif(exists $ttlist1{$i})
     {
-      $rt=$ttlist1{$i}*0.77; 
+      if($ttlist1{$i}==1) { $rt=$rate[1]*0.80; } 
+      else { $rt=$bas; } 
       $trlist[$cn][$cl]=$rt; 
 
-      if($prev>2*$bas)
+      if($prev>$bas)
       {
         $prot+=($protrate*$mrna-$degp*$prot);
         $mrna+=($prev-$degm*$mrna); 
@@ -1144,10 +1181,11 @@ for($cn=0;$cn<10;$cn++)
     }
     elsif(exists $ttlist2{$i})
     {
-      $rt=$ttlist2{$i}*0.77; 
+      if($ttlist2{$i}==1) { $rt=$rate[2]*0.80; } 
+      else { $rt=$bas; } 
       $trlist[$cn][$cl]=$rt; 
 
-      if($prev>2*$bas)
+      if($prev>$bas)
       {
         $prot+=($protrate*$mrna-$degp*$prot);
         $mrna+=($prev-$degm*$mrna); 
@@ -2025,17 +2063,17 @@ for($cn=0;$cn<$numcell;$cn++)
   {
     $time1+=$arr1[$i];
     $time1=sprintf("%0.4f",$time1);
-    $ttlist1{$time1}=$rate[1];
+    $ttlist1{$time1}=1;
     $time1+=$arr2[$i];
     $time1=sprintf("%0.4f",$time1);
-    $ttlist1{$time1}=$bas;
+    $ttlist1{$time1}=0;
 
     $time2+=$arr3[$i];
     $time2=sprintf("%0.4f",$time2);
-    $ttlist2{$time2}=$rate[2];
+    $ttlist2{$time2}=1;
     $time2+=$arr4[$i];
     $time2=sprintf("%0.4f",$time2);
-    $ttlist2{$time2}=$bas;
+    $ttlist2{$time2}=0;
   }
 
   if($time1>$time2) { $time=$time1; } 
@@ -2054,10 +2092,26 @@ for($cn=0;$cn<$numcell;$cn++)
     $timelist[$cl]=$i;
     if(exists $ttlist1{$i} && exists $ttlist2{$i})
     {
-      $rt=($ttlist1{$i}+$ttlist2{$i})*0.77; 
+      if($ttlist1{$i}==1 && $ttlist2{$i}==1) 
+      {
+	 $rt=($rate[1]+$rate[2])*0.80; 
+      }
+      elsif($ttlist1{$i}==1 && $ttlist2{$i}==0) 
+      {
+	 $rt=$rate[1]*0.80; 
+      }
+      elsif($ttlist1{$i}==0 && $ttlist2{$i}==1) 
+      {
+	 $rt=$rate[2]*0.80; 
+      }
+      elsif($ttlist1{$i}==0 && $ttlist2{$i}==0) 
+      {
+	 $rt=$bas; 
+      }
+
       $trlist[$cn][$cl]=$rt; 
 
-      if($prev>2*$bas)
+      if($prev>$bas)
       {
         $prot+=($protrate*$mrna-$degp*$prot);
         $mrna+=($prev-$degm*$mrna); 
@@ -2077,10 +2131,11 @@ for($cn=0;$cn<$numcell;$cn++)
     }
     elsif(exists $ttlist1{$i})
     {
-      $rt=$ttlist1{$i}*0.77; 
+      if($ttlist1{$i}==1) { $rt=$rate[1]*0.80; } 
+      else { $rt=$bas; } 
       $trlist[$cn][$cl]=$rt; 
 
-      if($prev>2*$bas)
+      if($prev>$bas)
       {
         $prot+=($protrate*$mrna-$degp*$prot);
         $mrna+=($prev-$degm*$mrna); 
@@ -2100,10 +2155,11 @@ for($cn=0;$cn<$numcell;$cn++)
     }
     elsif(exists $ttlist2{$i})
     {
-      $rt=$ttlist2{$i}*0.77; 
+      if($ttlist2{$i}==1) { $rt=$rate[2]*0.80; } 
+      else { $rt=$bas; } 
       $trlist[$cn][$cl]=$rt; 
 
-      if($prev>2*$bas)
+      if($prev>$bas)
       {
         $prot+=($protrate*$mrna-$degp*$prot);
         $mrna+=($prev-$degm*$mrna); 
