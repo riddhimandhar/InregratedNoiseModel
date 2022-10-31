@@ -31,3 +31,4 @@ Simulations
 
 - Code for exploration of parameter values in the mathematical model and their impact on noise  
 
+- MCMC exploration of combinations of parameter values 
